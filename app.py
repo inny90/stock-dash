@@ -199,7 +199,7 @@ with st.sidebar:
                 targets = [
                     ("DART 소형 JSON", "https://opendart.fss.or.kr/api/company.json",
                      {"crtfc_key":dart_key,"corp_code":"00126380"}, bool(dart_key)),
-                    ("주식시세 JSON", "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService_V2/getStockPriceInfo_V2",
+                    ("주식시세 JSON", "https://apis.data.go.kr/1160100/service/GetStockSecuritiesInfoService/getStockPriceInfo",
                      {"serviceKey":price_key,"resultType":"json","numOfRows":1}, bool(price_key)),
                 ]
                 for name, url, params, configured in targets:
